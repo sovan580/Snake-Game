@@ -38,7 +38,7 @@ def snakegame():
             score=(length_of_snake-1)*5
             score_font=pygame.font.SysFont("comicsansms",35)
             value=score_font.render("Your Score : "+str(score),True,green)
-            gamedisplay.blit(value,[display_width/3,display_height/5])
+            gamedisplay.blit(value,[display_width/3,display_height/3])
             pygame.display.update()
             for event in pygame.event.get():
                 if event.type==pygame.KEYDOWN:
